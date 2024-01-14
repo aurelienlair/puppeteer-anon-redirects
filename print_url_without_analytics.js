@@ -1,11 +1,3 @@
-/*
- * brew install tor
- *
- * Usage:
- * $ > tor
- * $ > node print_url_without_analytics.js
- */
-
 const puppeteer = require('puppeteer-extra');
 const stealthPlugin = require('puppeteer-extra-plugin-stealth');
 const anonymizeUAPlugin = require('puppeteer-extra-plugin-anonymize-ua');
