@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "puppeteer": "21.7.0",
+    "puppeteer-extra": "3.3.6",
+    "puppeteer-extra-plugin-anonymize-ua": "2.4.6",
+    "puppeteer-extra-plugin-stealth": "2.11.2",
+    "socks-proxy-agent": "8.0.2"
+  }
+}
