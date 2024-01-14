@@ -36,6 +36,6 @@ async function followRedirects(url) {
   await browser.close();
 }
 
-const url = "https://substack.com/redirect/ea5ab4d5-b56f-47c8-b8ab-206356b9beca?j=eyJ1IjoiMTJ3ajhlIn0.Lp_11oqu-sKQUwpVRkmaG1MfxPEkYwMrvBY5E1By7EI";
+const url = "https://example.com/path/to/page?utm_source=tracking&utm_medium=annoying&utm_campaign=spam&other_param=value";
 
 followRedirects(url);
