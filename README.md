@@ -15,9 +15,7 @@ Within this repository, you'll find comprehensive guidelines, code excerpts, and
 To get started with this project, you'll need to install the following tools:
 
 - [Node.js](https://nodejs.org/): Node.js is a JavaScript runtime used for executing scripts and applications. Download and install it from the official website.
-
 - [npm](https://www.npmjs.com/): npm is the Node.js package manager and is included with Node.js installation.
-
 - [Tor](https://www.torproject.org/): Tor is a privacy-focused web browser and network that enables anonymous communication. Install Tor from the official website.
 
 Please ensure that you have Node.js and npm installed on your machine before proceeding. For Tor, download and install it according to the instructions provided on the official Tor Project website.
@@ -36,6 +34,12 @@ cd puppeteer-anon-redirects
 
 ### Install Dependencies
 
+Install Tor
+
+```shell
+brew install tor
+```
+
 Install the required dependencies using npm:
 
 ```bash
@@ -49,22 +53,19 @@ To execute the script and see the final URL without query parameters, follow the
 1. Ensure Tor is running:
 
    Before running the script, make sure that Tor is up and running. Open another terminal and start Tor using the `tor` command.
-
-2. Open the `print_url_without_analytics.js` script in a text editor
+2. Open the `url_without_analytics.js` script in a text editor
 3. Locate the following line in the script:
 
-    ```javascript
-    const url = "https://example.com/path/to/page?utm_source=tracking&utm_medium=annoying&utm_campaign=spam&other_param=value";
-    ```
-
+   ```javascript
+   const url = "https://example.com/path/to/page?utm_source=tracking&utm_medium=annoying&utm_campaign=spam&other_param=value";
+   ```
 4. Replace the example URL with the one you want to test. You can use URLs with annoying tracking parameters
 5. Save the changes
 6. Open a terminal and navigate to the project directory:
 
-    ```bash
-    cd puppeteer-anon-redirects
-    ```
-
+   ```bash
+   cd puppeteer-anon-redirects
+   ```
 7. Run the script:
 
 ```bash
@@ -84,13 +85,13 @@ Feel free to experiment with different URLs by updating the url variable in the 
 
 `<type>(<scope>): <subject>`
 
-| Type | Description |
-|------| ----------- |
-| `style` | Changes that do not affect the meaning of the code (white-space, formatting, missing semi-colons, etc) |
-| `chore` | Changes to the build process or auxiliary tools and libraries such as documentation generation |
-| `docs` | Documentation Updates |
-| `feat` | New Features |
-| `fix`  | Bug Fixes |
-| `refactor` | Code Refactoring |
-| `test` | Adding missing tests |
-| `perf` | A code change that improves performance |
+| Type         | Description                                                                                            |
+| ------------ | ------------------------------------------------------------------------------------------------------ |
+| `style`    | Changes that do not affect the meaning of the code (white-space, formatting, missing semi-colons, etc) |
+| `chore`    | Changes to the build process or auxiliary tools and libraries such as documentation generation         |
+| `docs`     | Documentation Updates                                                                                  |
+| `feat`     | New Features                                                                                           |
+| `fix`      | Bug Fixes                                                                                              |
+| `refactor` | Code Refactoring                                                                                       |
+| `test`     | Adding missing tests                                                                                   |
+| `perf`     | A code change that improves performance                                                                |
